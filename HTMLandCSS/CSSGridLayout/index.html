@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Animations</title>
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="box box1">box1a</div>
+
+    <script>
+        (() => {
+          'use strict';
+          document.querySelector('body').addEventListener('click', () => {
+            document.querySelectorAll('.box').forEach((box) => {
+              box.classList.add('moved');
+            });
+          });
+        })();
+      </script>
+  </body>
+</html>
